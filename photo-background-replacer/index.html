@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证件照背景替换工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>证件照背景替换工具</h1>
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <label for="imageUpload" class="upload-label">选择证件照</label>
+        </div>
+        <div class="color-picker-section">
+            <label for="backgroundColor">选择背景颜色:</label>
+            <select id="backgroundColor">
+                <option value="#ffffff">白色</option>
+                <option value="#ff0000">红色</option>
+                <option value="#0000ff">蓝色</option>
+            </select>
+        </div>
+        <div class="preview-section">
+            <h2>预览</h2>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="download-section">
+            <button id="downloadButton" disabled>下载替换后的照片</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
